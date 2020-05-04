@@ -1,0 +1,802 @@
+/* 全体共通のところ */
+body {
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ヘッダーのところ */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+
+}
+
+header .header-top {
+    border-top: 6px solid #a6272d;
+    border-bottom: 1px solid #a6272d;
+}
+
+header .wrap {
+    margin: 0 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+header h1 a {
+    color: #a6272d;
+}
+
+header .contact {
+    text-align: center;
+}
+
+header .ttl {
+    margin: 0;
+    font-size: 14px;
+}
+
+header .tel {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .time {
+    margin: 0;
+    font-size: 10px;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav li {
+    width: calc(100% / 5);
+}
+
+header nav li + li {
+    border-left: 0.5px solid #666666;
+}
+
+header nav li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 28px;
+}
+
+header nav li:hover {
+    border-bottom: 5px solid #a6272d;
+}
+
+header ul .ja {
+    font-size: 14px;
+    color: black;
+}
+
+header ul .en {
+    font-size: 10px;
+    color: #4d4d4d;
+}
+
+
+/* メインのところ */
+/* スライドショーのところ */
+main .space {
+    height: 135px;
+}
+
+main .slide div img {
+    width: 100%;
+}
+
+/* 各種サービスのところ */
+main .servise h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+main .servise img {
+    width: 100px;
+    height: 100px;
+}
+
+main .servise ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+    padding: 10px;
+}
+
+main .servise ul li {
+    width: calc(100% / 5);
+}
+
+main .servise ul a:hover {
+    opacity: 0.5;
+}
+
+main .servise li a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 130px;
+    margin: 0 auto;
+}
+
+main .servise .food {
+    background-color: #F7931E;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+main .servise .courier {
+    background-color: #8CC63F;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+main .servise .moving {
+    background-color: #29ABE2;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+main .servise .taxi {
+    background-color: #C15050;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+main .servise .shopping {
+    background-color: #FF99AC;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+main .servise ul li + li {
+    border-left: 0.5px solid #666666;
+}
+
+
+
+
+/* 特徴のところ */
+main .features {
+    margin: 30px 0;
+} 
+
+main .features span {
+    color: #F15A24;
+}
+
+main .features p {
+    margin: 0;
+}
+
+/* 背景が灰色のところ */
+main .features .bgcolor {
+    background-color: #F2F2F2;
+    padding: 30px 0;
+}
+
+/* 背景が白色のところ */
+main .features .bgcolor-none {
+    padding: 30px 0;
+}
+
+/* KobaDeryの特徴のところ */
+main .features .feature-ttl {
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+main .features .feature-ttl .ttl-text {
+    width: 180px;
+    font-size: 18px;
+    line-height: 38px;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+main .features .feature-ttl .ttl-shadow {
+    width: 180px;
+    height: 38px;
+    background-color: #A6272D;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 50;
+}
+
+/* 特徴3つのところ*/
+main .features .feature-contents {
+    display: flex;
+    justify-content: center;
+}
+
+main .features img, .feature-text {
+    margin: 0 30px;
+}
+
+main .feature .feature-text {
+    width: 50%;
+}
+
+main .features .feature-content {
+    width: 390px;
+    height: 74px;
+    position: relative;
+}
+
+main .features .bgcolor .content-ttl {
+    width: 370px;
+    font-size: 18px;
+    line-height: 38px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+}
+
+main .features .bgcolor-none .content-ttl {
+    width: 370px;
+    font-size: 18px;
+    line-height: 38px;
+    background-color: #F2F2F2;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+}
+
+main .features .content-shadow {
+    width: 370px;
+    height: 38px;
+    background-color: #A6272D;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 50;
+}
+
+
+/* ニュースのところ */
+main .news {
+    text-align: center;
+}
+
+main .news .news-ttl {
+    color: #a6272d;
+    font-size: 16px;
+}
+
+main .news .news-list {
+    display: flex;
+    justify-content: center;
+}
+
+main .news ul {
+    font-size: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+main .news li {
+    line-height: 30px;
+}
+
+main .news li span {
+    margin: 0 30px;
+}
+
+main .news a {
+    color: #4D4D4D;
+}
+
+main .news a:hover {
+    color: #A6272D;
+}
+
+main .news .more {
+    color: #808080;
+    font-size: 10px;
+}
+
+main .news  li + li {
+    border-top: 0.5px solid #CCCCCC;
+}
+
+/* フッターのところ */
+footer .footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer .footer a {
+    font-weight: normal;
+    font-size: 24px;
+    color: #A6272D;
+}
+
+footer .footer ul {
+    font-size: 10px;
+    color: #666666;
+}
+
+footer .footer h1 {
+    margin: 0 10px;
+}
+
+footer h1, p {
+    margin: 0;
+}
+
+footer .end {
+    background-color: #A6272D;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+/* 中くらいのサイズの時 */
+@media screen and (max-width: 959px) {  
+    /* 各種サービスのところ */  
+    main .servise img {
+        width: 70px;
+        height: 70px;
+    }
+            
+    main .servise li a {
+        font-size: 10px;
+        width: 100px;
+    }
+    
+    main .servise .food {
+        line-height: 24px;
+    }
+
+    main .servise .courier {
+        line-height: 24px;
+    }
+
+    main .servise .moving {
+        line-height: 24px;
+    }
+
+    main .servise .taxi {
+        line-height: 24px;
+    }
+
+    main .servise .shopping {
+        width: 120px;
+        line-height: 24px;
+    }
+
+
+        
+    /* 特徴のところ */
+/* KobaDeryの特徴のところ */
+main .features .feature-ttl {
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+main .features .feature-ttl .ttl-text {
+    width: 180px;
+    font-size: 18px;
+    line-height: 38px;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+main .features .feature-ttl .ttl-shadow {
+    width: 180px;
+    height: 38px;
+    background-color: #A6272D;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 50;
+}
+
+/* 特徴3つのところ*/
+main .features img {
+    width: 200px;
+    height: 200px;
+}
+
+main .features img, .feature-text {
+    margin: 0 20px;
+}
+
+main .features .feature-content {
+    width: 280px;
+    height: 70px;
+}
+
+main .features .bgcolor .content-ttl {
+    width: 280px;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+main .features .bgcolor-none .content-ttl {
+    width: 280px;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+main .features .content-shadow {
+    width: 280px;
+    height: 34px;
+}
+    
+    /* ニュースのところ */
+    main .news li span {
+        margin: 0 20px;
+    }
+}
+
+
+/* 小さいサイズの時 */
+@media screen and (max-width: 559px) {
+    /* ハンバーガーメニューがんばるぞい */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 6px solid #a6272d;
+        border-bottom: 1px solid #a6272d;
+    }
+
+    header .header-top {
+        border-top: 0 solid #a6272d;
+        border-bottom: 0 solid #a6272d;
+    }
+    
+    header .wrap {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+    
+    header h2 {
+        font-size: 8px;
+    }
+    
+
+    header .ttl {
+        font-size: 8px;
+    }
+    
+    header .tel {
+        font-size: 10px;
+    }
+    
+    header .time {
+        font-size: 4px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+    
+    header nav li {
+        width: 100%;
+    }
+    
+    header nav li + li {
+        border-top: 0.5px solid #666666;
+    }
+    
+    header nav li a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 28px;
+    }
+    
+    header nav li:hover {
+        border-bottom: 0px solid #a6272d;
+        background-color: whitesmoke;
+    }
+    
+    
+    header ul .ja {
+        font-size: 14px;
+        color: black;
+    }
+    
+    header ul .en {
+        font-size: 10px;
+        color: #4d4d4d;
+    }
+    
+    
+ 
+    /* ハンバーガーメニューの見た目 */
+.menuButton {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+}
+
+.menuButton div {
+    height: 3px;
+    width: 60%;
+    border-radius: 3px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+.menuButton div:nth-of-type(1) {
+    transform: translate(-50%, -12px);
+}
+
+.menuButton div:nth-of-type(3) {
+    transform: translate(-50%, 10px);
+}
+
+/* ハンバーガーメニューをクリックした後バツになる動き */
+.menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+}
+.menuButton.active div:nth-of-type(1) {
+    transform: rotate(45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+}
+.menuButton.active div:nth-of-type(3) {
+    transform: rotate(-45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+}
+
+/* ドロップダウンメニュー */
+nav {
+    width: 100%;
+    visibility: hidden;
+    transition: .5s;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: -300px;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    box-shadow: 0 1px 3px 3px gray;
+}
+
+nav a {
+    color: gray;
+}
+
+nav.active {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+
+main .space {
+    height: 62px;
+}
+    
+
+    
+    /* 各種サービスのところ */
+    main .servise h3 {
+        font-size: 24px;
+    }
+
+    main .servise img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    main .servise ul {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    main .servise ul li {
+        width: 40%;
+        margin: 10px 0;
+    }
+
+    main .servise li a {
+        font-size: 12px;
+    }
+
+    main .servise .food {
+        line-height: 24px;
+    }
+
+    main .servise .courier {
+        line-height: 24px;
+    }
+
+    main .servise .moving {
+        line-height: 24px;
+    }
+
+    main .servise .taxi {
+        line-height: 24px;
+    }
+
+    main .servise .shopping {
+        width: 120px;
+        line-height: 24px;
+    }
+    
+    main .servise ul li + li {
+        border-left: 0px solid #666666;
+    }
+    
+    main .features img {
+        width: 300px;
+    }
+
+    main .features p {
+        font-size: 16px;
+    }
+
+    /* 特徴のところ */
+    main .features .feature-ttl {
+        width: 200px;
+        height: 70px;
+    }
+    
+    main .features .feature-ttl .ttl-text {
+        width: 180px;
+        font-size: 18px;
+        line-height: 38px;
+    }
+    
+    main .features .feature-ttl .ttl-shadow {
+        width: 180px;
+        height: 38px;
+    }
+    
+    
+    /* 特徴3つのところ*/
+    main .features .bgcolor .feature-contents {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main .features .bgcolor-none .feature-contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .features img, .feature-text {
+        margin: 0 auto;
+    }
+    
+    main .feature .feature-text {
+        width: 80%;
+    }
+
+    main .features .feature-content {
+        height: 74px;
+    }
+
+    
+    main .features .bgcolor .content-ttl {
+        width: 260px;
+        font-size: 13px;
+        line-height: 32px;
+    }
+    
+    main .features .bgcolor-none .content-ttl {
+        width: 260px;
+        font-size: 13px;
+        line-height: 32px;
+    }
+    
+    main .features .content-shadow {
+        width: 260px;
+        height: 32px;
+    }
+    
+
+    /* ニュースのところ */
+    main .news .news-ttl {
+        font-size: 20px;
+    }
+
+    main .news ul {
+        font-size: 6px;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    main .news li {
+        line-height: 16px;
+    }
+
+    main .news li span {
+        margin: 0 5px;
+    }
+
+    main .news .more {
+        font-size: 6px;
+    }
+
+/* フッターのところ */
+footer .footer a {
+    font-size: 20px;
+}
+
+footer .footer ul {
+    font-size: 6px;
+}
+
+footer p {
+    font-size: 6px;
+}
+
+
+}
